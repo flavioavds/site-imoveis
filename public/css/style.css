@@ -1,0 +1,847 @@
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+body{
+    background: url('../img/bg.png')
+                linear-gradient(50deg, #dde2e0c9, #f1fffadc);
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav.navbar-transparente{
+    padding: 15px 0;
+    background: rgba(11, 8, 65, 0.979);
+}
+nav.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    margin-top: 5px;
+    margin-right: 20px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    border-radius: 5%;
+    background: url('../img/bg-rodape.png') no-repeat bottom left;
+    background-size: 0px;
+    transition: background-size 1s;
+}
+.contato{
+    display: block;
+    float: right;
+    color: #424a91;
+    text-align: right;
+    font-size: 0.9em;
+}
+nav.navbar-light .navbar-nav .nav-link:hover{
+    color: #9bf0e1;
+    background-size: 40px;
+}
+
+nav.navbar-light .navbar-toggler{
+    color: rgba(255, 255, 255,.5);
+    border-color: rgba(255, 255, 255,.5);
+}
+.navbar-collapse{
+    align-items: right;
+}
+
+#home{
+    border: 1px solid white;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15px;
+}
+#home h4{
+    font-size: 1.2em;
+}
+#home h5{
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(11, 8, 65);
+}
+#home p{
+    font-size: 1em;
+    text-align: justify;
+    color: rgb(11, 8, 65);
+}
+
+
+#interno-carousel{
+    width: 900px;
+}
+#interno-right{
+    width: 400px;
+    float: right;
+    padding: 10px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.301);
+}
+section#home .container-fluid{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+section#home .img-fluid{
+    object-fit: cover; 
+    object-position: center; 
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 5px;
+}
+
+.divisor{
+    border-left: 1px solid #9bf0e1;
+    background: #9bf0e1;
+    margin: 14px 20px;
+}
+#cliente{
+    display: inline;
+    float: left;
+    background: #ccc;
+    color: rgb(11, 8, 65);
+    padding: 11px;
+    line-height: 7px;
+    margin: 11px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+nav.navbar-light .navbar-nav .nav-link#cliente:hover{
+    background: rgb(11, 8, 65);
+    color: white;
+    border: 1px solid white;
+}
+.carousel-caption .btn-azul,
+#cidade .btn-azul,
+#anuncios-proprietario .btn-azul,
+#blog .btn-azul{
+    background: rgb(11, 8, 65);
+    color: white;
+}
+.carousel-caption .btn-azul:hover,
+#cidade .btn-azul:hover,
+#anuncios-proprietario .btn-azul:hover,
+#blog .btn-azul:hover{
+    border: 2px solid rgb(11, 8, 65);
+    background: white;
+    color: rgb(11, 8, 65);
+    font-weight: bold;
+}
+.btn-group .btn-outline-azul{
+    background: rgb(11, 8, 65);
+    color: white;
+}
+.btn-group .btn-outline-azul:hover{
+    background: rgb(11, 8, 65);
+    color: white;
+}
+
+/*Barra de Pesquisa*/
+section#barra-pesquisa{
+    background: #fcf7f8;
+}
+section#barra-pesquisa .container{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 120px;
+    padding: 10px;
+}
+section#barra-pesquisa h2{
+    font-size: 2em;
+    color: #03072c;
+    text-align: center;
+}
+section#barra-pesquisa h6{
+    font-size: 1.3em;
+    text-align: center;
+    color: #03072c;
+}
+#tipo .negrito{
+    font-weight: bold;
+}
+#procura{
+    display: block;
+    float: left;
+}
+#tipo{
+    display: block;
+    float: center;
+
+}
+#cidade{
+    display: block;
+    float: right;
+}
+.btn-group{
+    display: block;
+    align-items: center;
+}
+#procura input{
+    display: block;
+  }
+#procura   label{
+    display: block;
+    opacity: .5;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 7px;
+    align-items: center;
+  }
+#procura   input:checked + label{
+    opacity: 1;
+  }
+
+/*INICIO DESTAQUE*/
+#destaque{
+    background: #61707331;
+    padding-bottom: 15px;
+}
+#destaque .container{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+#destaque h1{
+    background-color: rgba(11, 8, 65, 0.692);
+    color: white;
+    padding: 3px 0;
+    margin: 1px 0;
+    text-align: center;
+}
+#destaque .carousel-item img{
+    border-radius: 4px;
+}
+#lancamentos-construcoes{    
+    background: #61707331;
+    padding-bottom: 15px;
+}
+#lancamentos-construcoes .container{    
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+#lancamentos-construcoes h1{
+    background-color: rgba(11, 8, 65, 0.692);
+    color: white;
+    padding: 3px 0;
+    margin: 1px 0;
+    text-align: center;
+}
+.card{
+    border-radius: 15px;
+}
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+}
+#anuncios-proprietario .container-fluid{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#anuncios-proprietario .container-fluid .card-img-overlay{
+    margin-top: 40px;
+    margin-left: 350px;
+}
+/*Inicio Blog*/
+#blog{
+    background: #61707331
+}
+#blog .container{
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+#blog h2{
+    padding: 35px;
+}
+#blog a{
+    color: rgb(11, 8, 65);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-size 1s;
+    
+}
+
+#blog .efeito-borda {
+    color: rgb(11, 8, 65);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.20s linear;
+    margin-top: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    
+}
+#blog a{
+    font-weight: 600 !important;
+}
+
+#blog .efeito-borda::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    display: block;
+    border: 1px solid rgb(11, 8, 65);
+    transition: all 0.30s ease;
+}
+#blog .efeito-borda:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    display: block;
+    border: 1px solid rgb(11, 8, 65);
+    transition: all 0.30s ease;
+}
+#blog .btn-azul{
+    margin-top: 35px;
+}
+
+/*Rodape*/
+footer{
+    background: rgb(11, 8, 65);
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+footer h4{
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+footer h3{
+    color: #ccc;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+footer h5{
+    color: #ccc;
+}
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    float: right;
+    margin: 0px 5px;
+}
+footer .redes-sociais ul li{    
+    float: left;
+    padding: 5px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* PRIMEIRA CONFIGURAÇÃO */
+
+@media (min-width: 0) and (max-width: 339.99px) {
+    section#barra-pesquisa .container{
+        margin-top: 160px;
+        padding: 10px;
+    }
+    section#barra-pesquisa h2{
+        font-size: 0.9em;
+    }
+    section#barra-pesquisa h6{
+        font-size: 0.9em;
+    } 
+    nav.navbar .navbar-toggler {
+        margin-top: 25px;
+        display: flex;
+        float: right;
+    }
+    nav.navbar-light .navbar-nav .nav-link.primeiro-item-nav{
+        margin-top: 75px;
+    }
+    nav.navbar-light .navbar-nav .nav-link{
+        padding: 0;
+    }
+    nav.navbar .contato{
+        font-size: 11px;
+    }
+    #home h4{
+        display: none;
+    }
+    #home h5{
+        display: none;
+    }
+    #home p{
+        display: none;
+    }
+    #interno-carousel{
+        width: auto;
+        background: none;
+    }
+    #interno-right{
+        width: 100px;
+        background: none;
+    }
+    #procura{
+        display: block;
+        float: center;
+        width: 100%;
+    }
+    #tipo{
+        display: block;
+        float: center;
+        width: 100%;
+    }
+    #cidade{
+        display: block;
+        float: center;
+        width: 80%;
+    }
+    div.btn-group{
+        display: flex;
+        width: 33%;
+    }
+    #procura input{
+        display: block;
+      }
+    #procura   label{
+        display: block;
+        opacity: .5;
+        margin-top: 2px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding: 7px 3%;
+        align-items: center;
+      }
+    #procura   input:checked + label{
+        opacity: 1;
+      }
+    #anuncios-proprietario .container-fluid .card-img-overlay{
+        margin-top: -30px;
+        margin-left: 0;
+    }
+    #anuncios-proprietario .container-fluid p{
+        font-size: small;    
+    }
+    #anuncios-proprietario .btn-azul{
+        padding: 0;
+        margin-top: -65px;
+        margin-left: 140px;
+    }
+    #blog .btn-azul{
+        margin-top: 35px;
+        width: max-content;
+        margin-left: -40px;
+    }
+
+
+/* Não Excluir */
+ }
+ 
+/* SEGUNDA CONFIGURAÇÃO */
+
+@media (min-width: 340px) and (max-width: 575.98px) { 
+    section#barra-pesquisa .container{
+        margin-top: 140px;
+        padding: 10px;
+    }
+    section#barra-pesquisa h2{
+        font-size: 0.9em;
+    }
+    section#barra-pesquisa h6{
+        font-size: 0.9em;
+    } 
+    nav.navbar .navbar-toggler {
+        margin-top: 25px;
+        display: flex;
+        float: right;
+    }
+    nav.navbar-light .navbar-nav .nav-link.primeiro-item-nav{
+        margin-top: 75px;
+    }
+    nav.navbar-light .navbar-nav .nav-link{
+        padding: 0;
+    }
+    nav.navbar .contato{
+        font-size: small;
+    }
+    #home h4{
+        display: none;
+    }
+    #home h5{
+        display: none;
+    }
+    #home p{
+        display: none;
+    }
+    #interno-carousel{
+        width: auto;
+        background: none;
+    }
+    #interno-right{
+        width: 100px;
+        background: none;
+    }
+    #procura{
+        display: block;
+        float: center;
+        width: 100%;
+    }
+    #tipo{
+        display: block;
+        float: center;
+        width: 100%;
+    }
+    #cidade{
+        display: block;
+        width: 85%;
+        float: center;
+    }
+    div.btn-group{
+        display: flex;
+        width: 60%;
+    }
+    #procura input{
+        display: block;
+      }
+    #procura   label{
+        display: block;
+        opacity: .5;
+        margin-top: 2px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding: 7px 10%;
+        align-items: center;
+      }
+    #procura   input:checked + label{
+        opacity: 1;
+      }
+    #anuncios-proprietario .container-fluid .card-img-overlay{
+        margin-top: -30px;
+        margin-left: 0;
+    }
+    #anuncios-proprietario .container-fluid h5{
+        font-size: small;    
+    }
+    #anuncios-proprietario .container-fluid p{
+        font-size: small;    
+    }
+    #anuncios-proprietario .btn-azul{
+        margin-top: -25px;
+        padding: 2px;
+    }
+    #blog .btn-azul{
+        margin-top: 35px;
+        width: max-content;        
+        margin-left: -20px;
+    }
+    
+
+/* Não Excluir */
+ }
+ 
+/* TERCEIRA CONFIGURAÇÃO */
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    section#barra-pesquisa .container{
+        margin-top: 150px;
+        padding: 10px;
+    }
+    section#barra-pesquisa h2{
+        font-size: 1em;
+    }
+    section#barra-pesquisa h6{
+        font-size: 1em;
+    } 
+    nav.navbar .navbar-toggler {
+        margin-top: 25px;
+        display: flex;
+        float: right;
+    }
+    nav.navbar-light .navbar-nav .nav-link.primeiro-item-nav{
+        margin-top: 85px;
+    }
+    nav.navbar-light .navbar-nav .nav-link{
+        padding: 0;
+    }
+    #home h4{
+        display: none;
+    }
+    #home h5{
+        display: none;
+    }
+    #home p{
+        display: none;
+    }
+    #interno-carousel{
+        width: 300px;
+        background: none;
+    }
+    #interno-right{
+        width: 200px;
+        float: center;
+        padding: 5px;
+        background: none;
+    }
+    #procura{
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    #tipo{
+        display: block;
+        float: right;
+        width: 50%;
+    }
+    #cidade{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .btn-group{
+        display: block;
+        align-items: center;
+    }
+    #procura input{
+        display: block;
+      }
+    #procura   label{
+        display: block;
+        opacity: .5;
+        margin-top: 2px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 3px;
+        align-items: center;
+      }
+    #procura   input:checked + label{
+        opacity: 1;
+      }
+    #anuncios-proprietario .container-fluid .card-img-overlay{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    #anuncios-proprietario .container-fluid h5{
+        font-size: medium;    
+    }
+    #anuncios-proprietario .container-fluid p{
+        font-size: medium;    
+    }
+    #anuncios-proprietario .btn-azul{
+        margin-top: -15px;
+    }
+
+/* Não Excluir */
+ }
+
+ /* QUARTA CONFIGURAÇÃO */
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    section#barra-pesquisa .container{
+        margin-top: 150px;
+        padding: 10px;
+    }
+    section#barra-pesquisa h2{
+        font-size: 1.3em;
+    }
+    section#barra-pesquisa h6{
+        font-size: 1.3em;
+    }
+    nav.navbar-light .navbar-nav .nav-link{
+        padding: 3px;
+        margin: 3px;
+        margin-top: 5px;
+    }
+    nav.navbar-light .navbar-nav .nav-link:hover{
+        background-size: 50px;
+    }
+    .divisor{
+        border-left: 1px solid #9bf0e1;
+        background: #9bf0e1;
+        margin: 18px 0;
+    }
+    #home h4{
+        font-size: 1em;
+    }
+    #home h5{
+        font-size: 1.1em;
+        text-align: center;
+        color: rgb(11, 8, 65);
+    }
+    #home p{
+        font-size: 13px;
+        text-align: justify;
+        color: rgb(11, 8, 65);
+    }
+    #cliente{
+        padding: 7px;
+    }
+    #interno-carousel{
+        width: 600px;
+    }
+    #interno-right{
+        width: 300px;
+        float: center;
+        padding: 8px;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.301);
+    }
+    #procura{
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    #tipo{
+        display: block;
+        float: right;
+        width: 50%;
+    }
+    #cidade{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .btn-group{
+        display: block;
+        align-items: center;
+    }
+    #procura input{
+        display: block;
+      }
+    #procura   label{
+        display: block;
+        opacity: .5;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5px;
+        align-items: center;
+      }
+    #procura   input:checked + label{
+        opacity: 1;
+      }
+    #anuncios-proprietario .container-fluid .card-img-overlay{
+        margin-top: 20;
+        margin-left: 0;
+    }
+    #anuncios-proprietario .container-fluid h5{
+        font-size: large;    
+    }
+    #anuncios-proprietario .container-fluid p{
+        font-size: large;    
+    }
+    #anuncios-proprietario .btn-azul{
+        margin-top: 0;
+    }
+/* Não Excluir */
+ }
+
+ /* QUINTA CONFIGURAÇÃO */
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #home h4{
+        font-size: 1em;
+    }
+    #home h5{
+        font-size: 1.2em;
+        text-align: center;
+        color: rgb(11, 8, 65);
+    }
+    #home p{
+        font-size: 15px;
+        text-align: justify;
+        color: rgb(11, 8, 65);
+    }
+    #interno-carousel{
+        width: 750px;
+    }
+    #interno-right{
+        width: 350px;
+        float: right;
+        padding: 9px;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.301);
+    }
+    #procura{
+        display: block;
+        float: left;
+        width: 25%;
+    }
+    #tipo{
+        display: block;
+        float: right;
+        width: 35%;
+    }
+    #cidade{
+        display: block;
+        width: 40%;
+    }
+    .btn-group{
+        display: block;
+        align-items: center;
+    }
+    #procura input{
+        display: block;
+      }
+    #procura   label{
+        display: block;
+        opacity: .5;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5px;
+        align-items: center;
+      }
+    #procura   input:checked + label{
+        opacity: 1;
+      }
+    #anuncios-proprietario .container-fluid .card-img-overlay{
+        margin-top: 0;
+        margin-left: 250;
+    }
+    #anuncios-proprietario .btn-azul{
+        margin-top: 0;
+    }
+    
+
+ /* Não Excluir */
+ }
+
+ /* SEXTA CONFIGURAÇÃO */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    #home h4{
+        font-size: 1.2em;
+    }
+    #home h5{
+        font-size: 1.3em;
+        text-align: center;
+        color: rgb(11, 8, 65);
+    }
+    #home p{
+        font-size: 1em;
+        text-align: justify;
+        color: rgb(11, 8, 65);
+    }
+    #interno-carousel{
+        width: 900px;
+    }
+    #interno-right{
+        width: 400px;
+        float: right;
+        padding: 10px;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.301);
+    }
+/* Não Excluir */
+ }
