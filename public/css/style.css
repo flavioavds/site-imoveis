@@ -8,6 +8,11 @@ body{
     background-attachment: fixed;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+section#alerta .container{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
 nav.navbar-transparente{
     padding: 15px 0;
     background: rgba(11, 8, 65, 0.979);
